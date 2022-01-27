@@ -107,7 +107,7 @@ p {
   background-color: rgb(31, 30, 30);
   width: 100vw;
   height: 100vh;
-  left: 0;
+  left: 100%;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -115,6 +115,10 @@ p {
   align-items: center;
   z-index: 1;
   overflow: hidden;
+  transition: 0.5s ease left;
+}
+#header .nav-list ul.active {
+  left: 0%;
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
@@ -144,8 +148,8 @@ p {
 }
 #header .hamburger {
   z-index: 100;
-  top: 10px;
-  right: 15px;
+  /* top: 10px;
+  right: 15px; */
   position: relative;
   height: 50px;
   width: 50px;
@@ -156,6 +160,8 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transform: scale(0.8);
+  margin-right: 20px;
 }
 #header .hamburger .bar {
   height: 2px;
@@ -657,4 +663,4 @@ p {
 }
 /* Media query for dekstop */
 /* End Media query for dekstop */
-/* menit 2:45:01 */
+/* menit 3:01:52 */
